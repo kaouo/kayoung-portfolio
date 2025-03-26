@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #000;
+  color: #fff;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 0.95rem;
+  border-top: 1px solid #333;
+}
+
+.left {
+  font-size: 12px;
+}
+
+.right {
+  display: flex;
+  gap: 0.6em;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

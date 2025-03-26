@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import IntroPage from "./pages/IntroPage";
 import MainPage from "./pages/MainPage";
 import DevPage from "./pages/DevPage";
 import MarketingPage from "./pages/MarketingPage";
@@ -9,7 +10,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<IntroPage />} />
+        <Route path="/main" element={<MainPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/dev" element={<DevPage />} />

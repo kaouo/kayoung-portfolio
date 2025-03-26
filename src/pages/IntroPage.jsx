@@ -7,8 +7,8 @@ function IntroPage() {
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    const fadeTimer = setTimeout(() => setFade(true), 3500);
-    const moveTimer = setTimeout(() => navigate("/main"), 4600);
+    const fadeTimer = setTimeout(() => setFade(true), 4000);
+    const moveTimer = setTimeout(() => navigate("/main"), 5200);
     return () => {
       clearTimeout(fadeTimer);
       clearTimeout(moveTimer);
