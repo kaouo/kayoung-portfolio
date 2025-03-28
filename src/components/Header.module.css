@@ -9,10 +9,17 @@
   border-bottom: 1px solid #333;
 }
 
+.brightTheme {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  color: #111;
+}
+
 .logo {
   font-family: "Source Code Pro", monospace;
   font-weight: bold;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .contact {

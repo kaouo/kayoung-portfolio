@@ -1,12 +1,34 @@
 import { useState } from "react";
-import styles from "./ProjectsPage.module.css";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import styles from "./ProjectsPage.module.css";
 
+// 프로젝트 목록 데이터
 const projectData = [
-  { id: 1, title: "PERSONAL PORTFOLIO", category: "WEB" },
-  { id: 2, title: "HAMBUGI TEST", category: "WEB" },
-  { id: 4, title: "MARKETING LANDING PAGE", category: "MARKETING" },
-  { id: 3, title: "INFORGRAPHIC DESIGN", category: "ETC" },
+  {
+    id: 1,
+    title: "PERSONAL PORTFOLIO",
+    category: "WEB",
+    image: "/images/portfolio.png",
+  },
+  {
+    id: 2,
+    title: "HAMBUGI TEST",
+    category: "WEB",
+    image: "/images/hambugi.png",
+  },
+  {
+    id: 3,
+    title: "MARKETING LANDING PAGE",
+    category: "MARKETING",
+    image: "/images/project3.png",
+  },
+  {
+    id: 4,
+    title: "INFORGRAPHIC DESIGN",
+    category: "ETC",
+    image: "/images/project4.png",
+  },
 ];
 
 const categories = ["WEB", "MARKETING", "ETC"];
@@ -22,6 +44,7 @@ function ProjectsPage() {
     <>
       <Header isMain={false} />
       <div className={styles.page}>
+        {/* 탭 메뉴 */}
         <div className={styles.tabs}>
           {categories.map((cat) => (
             <button
@@ -36,14 +59,33 @@ function ProjectsPage() {
           ))}
         </div>
 
+        {/* 프로젝트 카드 리스트 */}
         <div className={styles.projects}>
           {filteredProjects.map((project) => (
-            <div key={project.id} className={styles.project}>
-              <div className={styles.thumbnail}></div>
-              <div className={styles.projectInfo}>
-                <h2>{project.title}</h2>
+            <Link
+              key={project.id}
+              to={`/projects/${project.id}`}
+              className={styles.project}
+            >
+              <div className={styles.thumbnail}>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "/images/default.jpg"; // 이미지 에러 시 기본 이미지
+                  }}
+                />
               </div>
-            </div>
+
+              {/* 세로 구분선 */}
+              <div className={styles.divider} />
+
+              {/* 텍스트 정보 */}
+              <div className={styles.projectInfo}>
+                <h3>{project.title}</h3>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

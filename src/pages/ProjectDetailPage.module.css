@@ -1,0 +1,90 @@
+/* 전체 배경 컨테이너 */
+.wrapper {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px 60px;
+  box-sizing: border-box;
+}
+
+/* 상세 영역 */
+.detail {
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+  color: #111;
+}
+
+/* 제목 */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* 설명 */
+.description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 32px;
+}
+
+/* 썸네일 이미지 */
+.thumbnail {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 기술 섹션 */
+.section {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section li {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+/* 링크 버튼 */
+.link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #007aff;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  background-color: #f1f1f1;
+  border-color: #999;
+}
+
+/* 에러 메시지 */
+.notFound {
+  padding: 100px 20px;
+  text-align: center;
+  color: #333;
+  font-size: 1.1rem;
+}
