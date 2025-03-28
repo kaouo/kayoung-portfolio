@@ -1,38 +1,53 @@
 import { useState } from "react";
+import styles from "./ProjectsPage.module.css";
+
+const projectData = [
+  { id: 1, title: "Personal Portfolio", category: "WEB" },
+
+  { id: 2, title: "Marketing Landing Page", category: "MARKETING" },
+  { id: 3, title: "Infographic Design", category: "ETC" },
+
+  { id: 4, title: "Product Showcase", category: "WEB" },
+];
+
+const categories = ["WEB", "MARKETING", "ETC"];
 
 function ProjectsPage() {
-  const [category, setCategory] = useState("react");
+  const [selectedCategory, setSelectedCategory] = useState("WEB");
 
-  const projects = {
-    react: ["Portfolio", ""],
-    web: ["", ""],
-    vue: [""],
-  };
+  const filteredProjects = projectData.filter(
+    (project) => project.category === selectedCategory
+  );
 
   return (
-    <div style={styles.wrapper}>
-      <div style={styles.menu}>
-        <button onClick={() => setCategory("react")}>React & Vue</button>
-        <button onClick={() => setCategory("web")}>Web</button>
-        <button onClick={() => setCategory("vue")}>Vue</button>
+    <div className={styles.page}>
+      <div className={styles.tabs}>
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            className={`${styles.tab} ${
+              selectedCategory === cat ? styles.active : ""
+            }`}
+            onClick={() => setSelectedCategory(cat)}
+          >
+            {cat}
+          </button>
+        ))}
       </div>
 
-      <div style={styles.projectList}>
-        {projects[category].map((title, index) => (
-          <div key={index} style={styles.project}>
-            {title}
+      <div className={styles.projects}>
+        {filteredProjects.map((project) => (
+          <div
+            key={project.id}
+            className={`${styles.project} ${styles.projectEnter}`}
+          >
+            <h3>{project.title}</h3>
+            <p>{project.category}</p>
           </div>
         ))}
       </div>
     </div>
   );
 }
-
-const styles = {
-  wrapper: { padding: "40px", color: "#fff", backgroundColor: "#111" },
-  menu: { display: "flex", gap: "10px", marginBottom: "30px" },
-  projectList: { display: "grid", gap: "20px" },
-  project: { fontSize: "1.5rem", borderBottom: "1px solid gray" },
-};
 
 export default ProjectsPage;
