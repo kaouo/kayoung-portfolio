@@ -17,7 +17,7 @@ function MainPage() {
 
   return (
     <div className={styles.pageContainer}>
-      <Header />
+      <Header isMain={true} />
 
       <main className={styles.container}>
         <div className={styles.left}>

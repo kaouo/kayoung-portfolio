@@ -1,3 +1,11 @@
+:root {
+  --main-font: "Pretendard", sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
 /* KakaoSmallSans */
 @font-face {
   font-family: "KakaoSmallSans";
