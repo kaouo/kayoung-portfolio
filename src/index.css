@@ -1,4 +1,7 @@
 @import "./styles/fonts.css"; /* 폰트 정의 모음 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html,
 body {

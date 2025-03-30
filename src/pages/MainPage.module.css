@@ -24,8 +24,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
   z-index: 1;
+  min-height: 200px;
+}
+
+.left img,
+.right img {
+  width: 80%;
+  height: auto;
 }
 
 /* 가운데 점선 */

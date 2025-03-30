@@ -19,19 +19,25 @@ const projectData = [
   },
   {
     id: 3,
-    title: "MARKETING LANDING PAGE",
-    category: "MARKETING",
+    title: "KYOBO",
+    category: "ACTIVITIES",
     image: "/images/project3.png",
   },
   {
     id: 4,
+    title: "TOOLDI",
+    category: "ACTIVITIES",
+    image: "/images/project5.png",
+  },
+  {
+    id: 8,
     title: "INFORGRAPHIC DESIGN",
     category: "ETC",
     image: "/images/project4.png",
   },
 ];
 
-const categories = ["WEB", "MARKETING", "ETC"];
+const categories = ["WEB", "ACTIVITIES", "ETC"];
 
 function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("WEB");
