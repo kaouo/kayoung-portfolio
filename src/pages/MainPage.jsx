@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import styles from "./MainPage.module.css";
+import styles from "../styles/MainPage.module.css";
 
 function MainPage() {
   const navigate = useNavigate();

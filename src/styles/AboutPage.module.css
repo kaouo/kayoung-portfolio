@@ -1,0 +1,62 @@
+/* 공통 컨테이너 */
+.wrapper {
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+}
+
+/* 한 줄 소개 */
+.heading {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 키워드 */
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.keyword {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s forwards;
+}
+
+.fadeInKeyword {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+}

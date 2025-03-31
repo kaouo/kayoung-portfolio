@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
-import styles from "./ProjectDetailPage.module.css";
+import styles from "../styles/ProjectDetailPage.module.css";
 
 const projectData = [
   {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
-import styles from "./ProjectsPage.module.css";
+import styles from "../styles/ProjectsPage.module.css";
 
 // 프로젝트 목록 데이터
 const projectData = [

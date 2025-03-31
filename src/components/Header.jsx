@@ -17,7 +17,7 @@ function Header({ isMain, brightTheme }) {
       {isMain && (
         <div className={styles.contact}>
           <a href="mailto:iamkaouo@gmail.com">iamkaouo@gmail.com</a>
-          <span>+82 5454 4121</span>
+          <a href="facetime:+821054544121">+82 5454 4121</a>
         </div>
       )}
     </header>

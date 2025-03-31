@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./IntroPage.module.css";
+import styles from "../styles/IntroPage.module.css";
 
 function IntroPage() {
   const navigate = useNavigate();
