@@ -30,11 +30,10 @@ function MainPage() {
             <img
               src="/images/memoji-1.png"
               alt="Memoji Left"
-              className={styles.hoverImage}
+              className={`${styles.hoverImage} ${styles.leftImage}`}
               onClick={() => navigate("/about")}
             />
             <h2>ABOUT ME</h2>
-            <p></p>
           </motion.div>
         </div>
 
@@ -48,11 +47,10 @@ function MainPage() {
             <img
               src="/images/memoji-2.png"
               alt="Memoji Right"
-              className={styles.hoverImage}
+              className={`${styles.hoverImage} ${styles.rightImage}`}
               onClick={() => navigate("/projects")}
             />
             <h2>PROJECTS</h2>
-            <p></p>
           </motion.div>
         </div>
       </main>
