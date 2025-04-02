@@ -1,15 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 
-function Header({ isMain, brightTheme }) {
+function Header({ headerColor, textColor, isMain, brightTheme }) {
   const navigate = useNavigate();
 
   return (
     <header
-      className={`${styles.header} ${brightTheme ? styles.brightTheme : ""}`}
+      className={`${styles.header}`}
+      style={{ backgroundColor: headerColor, color: textColor }} // 헤더 색상 적용
     >
-      {/* 로고 클릭 시 /main 으로 이동 */}
-      <div className={styles.logo} onClick={() => navigate("/main")}>
+      <div
+        className={`${styles.logo} ${brightTheme ? styles.darkText : ""}`}
+        onClick={() => navigate("/main")}
+      >
         KAYOUNG
       </div>
 

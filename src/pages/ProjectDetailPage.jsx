@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import styles from "../styles/ProjectDetailPage.module.css";
 
 const projectData = [
   {
     id: 1,
-    itle: "",
+    title: "",
     description: "",
     image: "/images/project1.png",
     technologies: ["", ""],
@@ -14,7 +15,7 @@ const projectData = [
   },
   {
     id: 2,
-    itle: "",
+    title: "",
     description: "",
     image: "/images/project2.png",
     technologies: ["", ""],
@@ -22,7 +23,7 @@ const projectData = [
   },
   {
     id: 3,
-    itle: "",
+    title: "",
     description: "",
     image: "/images/project3.png",
     technologies: ["", ""],
@@ -43,10 +44,10 @@ function ProjectDetailPage() {
   const project = projectData.find((item) => item.id === Number(id));
 
   return (
-    <>
-      <Header isMain={false} brightTheme />
+    <div className={styles.page}>
+      <Header headerColor="#f8f9fa" textColor="#111" isMain={false} />
 
-      <div className={styles.wrapper}>
+      <main className={styles.wrapper}>
         <motion.div
           className={styles.inner}
           initial={{ opacity: 0, y: 20 }}
@@ -91,8 +92,10 @@ function ProjectDetailPage() {
             </>
           )}
         </motion.div>
-      </div>
-    </>
+      </main>
+
+      <Footer />
+    </div>
   );
 }
 

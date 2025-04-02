@@ -1,20 +1,26 @@
 .header {
+  height: 70px;
+  padding: 20px 40px; /* 상하 20px */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  background-color: #000;
   color: #fff;
   font-size: 0.95rem;
   border-bottom: 1px solid #333;
 }
 
 .brightTheme {
-  background-color: #f8f9fa;
   border-bottom: 1px solid #ddd;
-  color: #111;
 }
 
+.darkText {
+  color: #333;
+}
+
+/* brightTheme가 false일 때 (어두운 배경) */
+.header:not(.brightTheme) {
+  color: #fff;
+}
 .logo {
   font-family: "Source Code Pro", monospace;
   font-weight: bold;

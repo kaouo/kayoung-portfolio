@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 import styles from "../styles/ProjectsPage.module.css";
 
 // 프로젝트 목록 데이터
@@ -47,9 +49,10 @@ function ProjectsPage() {
   );
 
   return (
-    <>
+    <div className={styles.pageWrapper}>
       <Header isMain={false} />
-      <div className={styles.page}>
+
+      <main className={styles.page}>
         {/* 탭 메뉴 */}
         <div className={styles.tabs}>
           {categories.map((cat) => (
@@ -79,23 +82,22 @@ function ProjectsPage() {
                   alt={project.title}
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "/images/default.jpg"; // 이미지 에러 시 기본 이미지
+                    e.target.src = "/images/default.jpg";
                   }}
                 />
               </div>
 
-              {/* 세로 구분선 */}
               <div className={styles.divider} />
-
-              {/* 텍스트 정보 */}
               <div className={styles.projectInfo}>
                 <h3>{project.title}</h3>
               </div>
             </Link>
           ))}
         </div>
-      </div>
-    </>
+      </main>
+
+      <Footer />
+    </div>
   );
 }
 

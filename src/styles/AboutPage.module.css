@@ -1,62 +1,270 @@
-/* 공통 컨테이너 */
-.wrapper {
-  text-align: center;
-  padding: 80px 20px;
-  min-height: 100vh;
-  box-sizing: border-box;
-  color: white;
-  background-color: black;
-}
-
-/* 한 줄 소개 */
-.heading {
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1.6;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.fadeInUp {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* 키워드 */
-.keywords {
+.pageWrapper {
+  background-color: rgb(255, 249, 249);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.heroSection {
+  height: calc(100vh - 70px);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.heroImage {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-top-left-radius: 100% 90%;
+  border-top-right-radius: 100% 90%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.heroTextContainer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin-top: -50px;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.heroTitle {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: hsl(0, 0%, 34.1%);
+}
+
+.highlight {
+  color: rgb(98, 136, 112);
+  font-weight: 800;
+}
+
+/* about me text */
+.underline {
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: #888;
 }
 
-.keyword {
-  background-color: #2a2a2a;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 12px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeIn 0.5s forwards;
+.line {
+  width: 55%;
+  height: 1px;
+  background-color: #ccc;
+  flex-grow: 0;
 }
 
-.fadeInKeyword {
-  animation-name: fadeIn;
+/* Intro Section */
+.introSection {
+  padding: 80px 40px;
+  background-color: #f0efeb;
+  text-align: center;
 }
 
-@keyframes fadeIn {
-  to {
+.introImage {
+  width: 450px;
+  height: 550px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 60px;
+  transition: filter 0.4s ease, transform 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.introImage:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02); /* 약간 확대 효과도 추가 */
+}
+
+.introTitle {
+  color: hsl(0, 0%, 34.1%);
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.introName {
+  color: hsl(0, 0%, 34.1%);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.introRole {
+  color: hsl(0, 0%, 34.1%);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.introDesc {
+  color: hsl(0, 0%, 34.1%);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* About Section */
+.aboutSection {
+  padding: 100px 40px;
+  background-color: #f0efeb;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 중앙 정렬 */
+  justify-content: center;
+}
+
+.aboutList {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+.aboutItem {
+  max-width: 800px;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  font-size: 2rem;
+}
+
+.aboutTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.aboutText {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  white-space: pre-line;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@media (max-width: 768px) {
-  .heading {
-    font-size: 1.5rem;
+/* 반응형: 모바일 */
+@media (max-width: 1024px) {
+  /* Hero Section */
+  .heroImage {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 100% 90%;
+    border-top-right-radius: 100% 90%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .heroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: hsl(0, 0%, 34.1%);
+  }
+
+  /* about me text */
+  .underline {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    color: #888;
+  }
+
+  .line {
+    width: 55%;
+    height: 1px;
+    background-color: #ccc;
+    flex-grow: 0;
+  }
+
+  /* Intro Section */
+  .introImage {
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 60px;
+    transition: filter 0.4s ease, transform 0.3s ease;
+    filter: grayscale(100%);
+  }
+
+  .introImage:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02); /* 약간 확대 효과도 추가 */
+  }
+
+  .introTitle {
+    color: hsl(0, 0%, 34.1%);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+
+  .introName {
+    color: hsl(0, 0%, 34.1%);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .introRole {
+    color: hsl(0, 0%, 34.1%);
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .introDesc {
+    color: hsl(0, 0%, 34.1%);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
   }
 }

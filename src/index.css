@@ -1,8 +1,11 @@
-@import "./styles/fonts.css"; /* 폰트 정의 모음 */
+@import "./styles/fonts.css";
 
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: #000;
 }

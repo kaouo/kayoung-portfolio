@@ -1,10 +1,18 @@
-/* 페이지 기본 구조 */
+/* 전체 페이지 래퍼 */
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+/* 메인 콘텐츠 */
 .page {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 80px 20px 40px;
-  min-height: 100vh;
   text-align: center;
 }
 
@@ -54,12 +62,15 @@
 
 /* 프로젝트 리스트 */
 .projects {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
   width: 100%;
   max-width: 880px;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .project {
@@ -110,7 +121,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 40%; /* 썸네일 width 기준 */
+  left: 40%;
   width: 1px;
   background-color: #333;
   opacity: 0.5;
@@ -119,7 +130,7 @@
 /* 텍스트 정보 */
 .projectInfo {
   width: 60%;
-  min-height: 200px; /* 썸네일 높이와 맞춤 */
+  min-height: 200px;
   padding: 28px;
   display: flex;
   flex-direction: column;

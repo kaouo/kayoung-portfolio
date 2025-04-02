@@ -1,11 +1,22 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* 전체 배경 컨테이너 */
 .wrapper {
-  background-color: #f8f9fa;
-  min-height: 100vh;
+  flex: 1;
+  padding: 100px 20px 60px;
   display: flex;
   justify-content: center;
-  padding: 100px 20px 60px;
-  box-sizing: border-box;
+  align-items: flex-start;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease; /* 배경색 전환 효과 추가 */
+}
+
+.brightTheme {
+  background-color: #f8f9fa; /* 밝은 배경 */
 }
 
 /* 상세 영역 */
@@ -14,6 +25,7 @@
   width: 100%;
   text-align: center;
   color: #111;
+  margin: 0 auto;
 }
 
 /* 제목 */
@@ -21,6 +33,7 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 12px;
+  color: inherit;
 }
 
 /* 설명 */
@@ -28,6 +41,7 @@
   font-size: 1rem;
   color: #333;
   margin-bottom: 32px;
+  line-height: 1.6;
 }
 
 /* 썸네일 이미지 */
@@ -60,6 +74,7 @@
 .section li {
   font-size: 0.95rem;
   margin-bottom: 6px;
+  color: #555;
 }
 
 /* 링크 버튼 */
