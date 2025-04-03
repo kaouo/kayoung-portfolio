@@ -73,7 +73,8 @@
 
 /* Intro Section */
 .introSection {
-  padding: 80px 40px;
+  padding: 100px 40px;
+  min-height: 100vh;
   background-color: #f0efeb;
   text-align: center;
 }
@@ -92,7 +93,7 @@
 
 .introImage:hover {
   filter: grayscale(0%);
-  transform: scale(1.02); /* 약간 확대 효과도 추가 */
+  transform: scale(1.02);
 }
 
 .introTitle {
@@ -110,13 +111,15 @@
 
 .introRole {
   color: hsl(0, 0%, 34.1%);
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
+
 .introDesc {
+  font-family: "Pretendard-Regular", serif;
   color: hsl(0, 0%, 34.1%);
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 .description {
@@ -128,7 +131,8 @@
 /* About Section */
 .aboutSection {
   padding: 100px 40px;
-  background-color: #f0efeb;
+  min-height: 100vh;
+  background-color: rgb(248, 249, 252);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -154,14 +158,19 @@
 }
 
 .aboutTitle {
-  font-size: 1.5rem;
+  font-family: "Chosunilbo_myungjo", serif;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 16px;
   color: #222;
+  display: inline-block;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 4px;
 }
 
 .aboutText {
-  font-size: 1rem;
+  font-family: "Chosunilbo_myungjo", serif;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #444;
   white-space: pre-line;
@@ -200,7 +209,6 @@
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.4;
-    color: hsl(0, 0%, 34.1%);
   }
 
   /* about me text */
@@ -210,13 +218,11 @@
     align-items: center;
     gap: 12px;
     font-size: 1rem;
-    color: #888;
   }
 
   .line {
     width: 55%;
     height: 1px;
-    background-color: #ccc;
     flex-grow: 0;
   }
 
@@ -236,35 +242,31 @@
   .introImage:hover {
     filter: grayscale(0%);
     transform: scale(1.02); /* 약간 확대 효과도 추가 */
+    cursor: pointer;
   }
 
   .introTitle {
-    color: hsl(0, 0%, 34.1%);
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 60px;
   }
 
   .introName {
-    color: hsl(0, 0%, 34.1%);
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
 
   .introRole {
-    color: hsl(0, 0%, 34.1%);
     font-size: 1rem;
     margin-bottom: 20px;
   }
   .introDesc {
-    color: hsl(0, 0%, 34.1%);
     font-size: 1rem;
     line-height: 1.6;
   }
 
   .description {
     font-size: 1rem;
-    color: #444;
     line-height: 1.8;
   }
 }

@@ -39,17 +39,20 @@ export default function AboutPage() {
         <h3 className={styles.introName}>HELLO, I'M KAYOUNG</h3>
         <p className={styles.introRole}>WEB DEV × DIGITAL MARKETING</p>
         <p className={styles.introDesc}>
-          안녕하세요. 저는 IT와 콘텐츠 마케팅을 아우르는 홍가영입니다.
+          안녕하세요. 저는 기획부터 구현까지 함께하는 풀스택형 크리에이터
+          홍가영입니다.
           <br />
-          소프트웨어콘텐츠학과를 전공하며 개발과 기획, 마케팅까지 다양한 영역을
-          경험했습니다. <br />
-          기술과 콘텐츠를 연결해 더 큰 가치를 만드는 사람이 되고자 합니다.
+          소프트웨어콘텐츠학과를 전공하고 7년째 개인 블로그를 운영하며 콘텐츠를
+          꾸준히 제작해왔습니다.
+          <br />
+          기술과 콘텐츠의 융합을 통해 사람들에게 더 깊은 가치를 전달하고자
+          합니다.
         </p>
       </section>
 
       {/* About Section */}
       <section className={styles.aboutSection}>
-        <h2 className={styles.introTitle}>ABOUT ME</h2>
+        <h2 className={styles.introTitle}>ABOUT ME !</h2>
         <p className={styles.sectionSubtitle}>: INSIDE MY MIND</p>
 
         <div className={styles.aboutList}>
@@ -57,11 +60,11 @@ export default function AboutPage() {
           <div className={styles.aboutItem}>
             <h4 className={styles.aboutTitle}>🔍 호기심이 이끄는 탐구</h4>
             <p className={styles.aboutText}>
-              “왜 이렇게 동작할까?”, “더 나은 방법은 없을까?”
+              “왜 이렇게 동작할까? 더 나은 방법은 없을까?”
               <br />
               어렸을 때부터 사소한 것에도 끊임없이 질문을 던지며 성장해왔습니다.
               <br />
-              개발을 시작하면서 이 호기심은 더욱 깊어졌고, 코드를 한 줄 한 줄
+              개발을 시작하면서 이 호기심은 더욱 깊어졌고 코드를 한 줄 한 줄이
               제게는 퍼즐처럼 느껴졌습니다.
               <br />
               새로운 기술을 배우고 작은 아이디어도 직접 구현해보는 과정에서
@@ -78,8 +81,8 @@ export default function AboutPage() {
               기능을 만드는 것보다 더 중요한 것은 그것이 어떻게 쓰일지 고민하는
               것입니다.
               <br />
-              사용자의 입장에서 한 걸음 더 깊이 들어가면 버튼 하나, 애니메이션
-              흐름 하나에도 이유가 필요해집니다.
+              사용자의 입장에서 한 걸음 더 깊이 들어가면 버튼 하나, <br />
+              애니메이션 흐름 하나에도 이유가 필요해집니다.
               <br />
               코드 한 줄과 디자인 한 픽셀까지도 의미를 담아 정리하고 싶습니다.
             </p>
