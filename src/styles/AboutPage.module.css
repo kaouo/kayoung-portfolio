@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 80px 40px;
+  padding: 40px 80px;
   box-sizing: border-box;
   position: relative;
 }
@@ -38,7 +38,6 @@
   flex-direction: column;
   max-width: 100%;
   width: 100%;
-  margin-top: -50px;
   animation: fadeInUp 1s ease-out forwards;
 }
 
@@ -174,19 +173,6 @@
   line-height: 1.8;
   color: #444;
   white-space: pre-line;
-}
-
-/* Scroll */
-.scrollContainer {
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
-.scrollSection {
-  scroll-snap-align: start;
-  height: 100vh;
 }
 
 @keyframes fadeInUp {
