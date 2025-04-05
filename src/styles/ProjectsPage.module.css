@@ -166,18 +166,12 @@
 @media (max-width: 768px) {
   .project {
     flex-direction: column;
+    width: 90%;
+    padding: 12px;
   }
 
+  .projectInfo,
   .thumbnail {
-    width: 100%;
-    height: 160px;
-  }
-
-  .divider {
-    display: none;
-  }
-
-  .projectInfo {
     width: 100%;
     text-align: center;
     align-items: center;

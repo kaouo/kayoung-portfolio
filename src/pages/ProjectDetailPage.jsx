@@ -82,7 +82,6 @@ const projectData = [
       "도서 리뷰",
       "유튜브 채널 소개",
     ],
-    type: "contribution",
     link: "https://blog.naver.com/okmohae/221955672361",
   },
   /* 툴디 서포터즈 */
@@ -105,7 +104,6 @@ const projectData = [
       "굿노트 템플릿 제작",
       "배경화면 제작",
     ],
-    type: "contribution",
     link: "https://blog.naver.com/okmohae/223708700522",
   },
   /* 카드 뉴스 */
@@ -114,15 +112,14 @@ const projectData = [
     title: "📰 CARD NEWS",
     aspectRatio: "1 / 1",
     description:
-      "지금까지 제작한 카드뉴스를 아카이빙한 공간입니다. 다양한 디자인 플랫폼과 Photoshop 등을 활용해 다양한 주제를 시각적으로 구성했으며 SNS 홍보물까지 직접 기획하고 디자인한 작업물을 정리했습니다.",
+      "지금까지 제작한 카드뉴스를 아카이빙한 공간입니다. 디자인 플랫폼을 활용해 다양한 주제를 시각적으로 구성했으며 SNS 홍보물까지 직접 기획하고 디자인한 작업물을 정리했습니다.",
     image: [
       "/images/cardnews/cd-1.png",
       "/images/cardnews/cd-2.png",
       "/images/cardnews/cd-3.png",
       "/images/cardnews/cd-4.png",
     ],
-    technologies: ["", ""],
-    type: "contribution",
+    technologies: ["MIRICANVAS", "TOOLDI"],
     link: "",
   },
   /* 숏폼 */

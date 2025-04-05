@@ -47,6 +47,11 @@
     padding: 10px 20px;
   }
 
+  .logo {
+    font-size: 1rem; /* 작은 화면에선 더 작게 */
+    padding-top: 13px; /* 필요 시 상단 여백도 살짝 */
+  }
+
   .contact {
     margin-top: 6px;
     font-size: 0.85rem;

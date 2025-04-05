@@ -52,13 +52,13 @@ export default function AboutPage() {
 
       {/* About Section */}
       <section className={styles.aboutSection}>
-        <h2 className={styles.introTitle}>ABOUT ME !</h2>
-        <p className={styles.sectionSubtitle}>: INSIDE MY MIND</p>
+        <h2 className={styles.aboutTitle}>ABOUT ME !</h2>
+        <p className={styles.aboutSubtitle}>: INSIDE MY MIND</p>
 
         <div className={styles.aboutList}>
           {/* 01 */}
           <div className={styles.aboutItem}>
-            <h4 className={styles.aboutTitle}>🔍 호기심이 이끄는 탐구</h4>
+            <h4 className={styles.aboutMeTitle}>🔍 호기심이 이끄는 탐구</h4>
             <p className={styles.aboutText}>
               “왜 이렇게 동작할까? 더 나은 방법은 없을까?”
               <br />
@@ -74,7 +74,7 @@ export default function AboutPage() {
 
           {/* 02 */}
           <div className={styles.aboutItem}>
-            <h4 className={styles.aboutTitle}>👥 개발자이기 전에 사용자</h4>
+            <h4 className={styles.aboutMeTitle}>👥 개발자이기 전에 사용자</h4>
             <p className={styles.aboutText}>
               “내가 만든 서비스가 누군가에게 도움이 될까?”
               <br />
@@ -90,7 +90,9 @@ export default function AboutPage() {
 
           {/* 03 */}
           <div className={styles.aboutItem}>
-            <h4 className={styles.aboutTitle}>🤝 기술과 소통이 만나는 지점</h4>
+            <h4 className={styles.aboutMeTitle}>
+              🤝 기술과 소통이 만나는 지점
+            </h4>
             <p className={styles.aboutText}>
               “좋은 서비스는 혼자가 아니라 함께 만들어가는 과정에서 완성된다.”
               <br />

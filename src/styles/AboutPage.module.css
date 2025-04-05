@@ -152,11 +152,18 @@
   text-align: center;
 }
 
-.sectionSubtitle {
+.aboutTitle {
+  color: hsl(0, 0%, 34.1%);
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.aboutSubtitle {
   font-size: 2rem;
 }
 
-.aboutTitle {
+.aboutMeTitle {
   font-family: "Chosunilbo_myungjo", serif;
   font-size: 1.4rem;
   font-weight: 700;
@@ -187,85 +194,82 @@
 }
 
 /* 반응형: 모바일 */
-@media (max-width: 1024px) {
-  /* Hero Section */
+@media (max-width: 768px) {
+  .heroSection {
+    height: calc(100vh - 70px);
+  }
+
   .heroImage {
-    position: absolute;
-    right: 5%;
-    bottom: 0;
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-top-left-radius: 100% 90%;
-    border-top-right-radius: 100% 90%;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    overflow: hidden;
-    z-index: 1;
+    width: 250px;
+    height: 250px;
   }
 
   .heroTitle {
+    position: relative;
+    top: -50px;
     font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
-  /* about me text */
   .underline {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 1rem;
+    position: relative;
+    top: -50px;
   }
 
   .line {
-    width: 55%;
-    height: 1px;
-    flex-grow: 0;
-  }
-
-  /* Intro Section */
-  .introImage {
-    width: 350px;
-    height: 450px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
-    overflow: hidden;
-    margin-bottom: 60px;
-    transition: filter 0.4s ease, transform 0.3s ease;
-    filter: grayscale(100%);
-  }
-
-  .introImage:hover {
-    filter: grayscale(0%);
-    transform: scale(1.02);
-    cursor: pointer;
+    width: 75%;
   }
 
   .introTitle {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 60px;
+    font-size: 3rem;
+  }
+
+  .introImage {
+    width: 350px;
+    height: 450px;
   }
 
   .introName {
-    font-size: 2.5rem;
+    color: hsl(0, 0%, 34.1%);
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 
   .introRole {
+    color: hsl(0, 0%, 34.1%);
     font-size: 1rem;
     margin-bottom: 20px;
   }
+
   .introDesc {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.8;
   }
 
-  .description {
+  .aboutTitle {
+    font-size: 3rem;
+  }
+
+  .aboutSubtitle {
+    font-size: 1.7rem;
+  }
+
+  .aboutMeTitle {
+    font-family: "Chosunilbo_myungjo", serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #222;
+    display: inline-block;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 4px;
+  }
+
+  .aboutText {
+    font-family: "Chosunilbo_myungjo", serif;
     font-size: 1rem;
     line-height: 1.8;
+    color: #444;
+    white-space: pre-line;
   }
 }

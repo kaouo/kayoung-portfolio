@@ -180,12 +180,38 @@
 
 /* 반응형: 모바일 */
 @media (max-width: 768px) {
+  .wrapper {
+    padding: 40px;
+  }
+
   .projectLayout {
     flex-direction: column;
     align-items: center;
   }
+
   .leftColumn,
   .rightColumn {
     max-width: 100%;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    padding-left: 16px;
+  }
+
+  .techItem {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+  }
+
+  .linkButton {
+    font-size: 1rem;
+    padding: 8px 24px;
   }
 }
