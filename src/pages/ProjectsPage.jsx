@@ -51,13 +51,19 @@ const projectData = [
   },
   {
     id: 8,
-    title: "GALLERY",
+    title: "WALLPAPER",
     category: "ARCHIVING",
-    image: "/images/shortform/main.png",
+    image: "/images/wallpaper/main.png",
+  },
+  {
+    id: 9,
+    title: "NEON",
+    category: "ETC",
+    image: "/images/photoshop/main.gif",
   },
 ];
 
-const categories = ["WEB", "ANIMATION", "ACTIVITIES", "ARCHIVING"];
+const categories = ["WEB", "ANIMATION", "ACTIVITIES", "ARCHIVING", "ETC"];
 
 function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("WEB");

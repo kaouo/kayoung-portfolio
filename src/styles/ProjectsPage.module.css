@@ -51,6 +51,10 @@
   transition: transform 0.3s ease;
 }
 
+.tab:hover {
+  cursor: pointer;
+}
+
 .tab:hover::after,
 .active::after {
   transform: scaleX(1);
