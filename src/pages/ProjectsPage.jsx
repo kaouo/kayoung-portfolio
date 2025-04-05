@@ -11,35 +11,47 @@ const projectData = [
     id: 1,
     title: "PERSONAL PORTFOLIO",
     category: "WEB",
-    image: "/images/portfolio.png",
+    image: "/images/portfolio/main.png",
   },
   {
     id: 2,
     title: "HAMBUGI TEST",
     category: "WEB",
-    image: "/images/hambugi.png",
+    image: "/images/hambugi/main.png",
   },
   {
     id: 3,
-    title: "KYOBO",
-    category: "ACTIVITIES",
-    image: "/images/project3.png",
+    title: "3D CUBE",
+    category: "ANIMATION",
+    image: "/images/anime/main.gif",
   },
   {
     id: 4,
-    title: "TOOLDI",
+    title: "KYOBO",
     category: "ACTIVITIES",
-    image: "/images/project5.png",
+    image: "/images/kyobo/main.png",
   },
   {
-    id: 8,
-    title: "INFORGRAPHIC DESIGN",
+    id: 5,
+    title: "TOOLDI",
+    category: "ACTIVITIES",
+    image: "/images/tooldi/main.png",
+  },
+  {
+    id: 6,
+    title: "CARD NEWS",
     category: "ETC",
-    image: "/images/project4.png",
+    image: "/images/main.png",
+  },
+  {
+    id: 7,
+    title: "SHORT VIDEO",
+    category: "ETC",
+    image: "/images/main.png",
   },
 ];
 
-const categories = ["WEB", "ACTIVITIES", "ETC"];
+const categories = ["WEB", "ANIMATION", "ACTIVITIES", "ETC"];
 
 function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("WEB");

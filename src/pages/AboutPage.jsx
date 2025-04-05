@@ -22,7 +22,7 @@ export default function AboutPage() {
           </div>
         </div>
         <img
-          src="/images/kayoung.png"
+          src="/images/profile/kayoung-1.png"
           alt="profile1"
           className={styles.heroImage}
         />
@@ -32,7 +32,7 @@ export default function AboutPage() {
       <section className={styles.introSection}>
         <h2 className={styles.introTitle}>WHO AM I ?</h2>
         <img
-          src="/images/kayoung2.png"
+          src="/images/profile/kayoung-2.png"
           alt="profile2"
           className={styles.introImage}
         />

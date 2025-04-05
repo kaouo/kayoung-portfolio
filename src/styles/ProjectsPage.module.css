@@ -116,17 +116,6 @@
   display: block;
 }
 
-/* 구분선 */
-.divider {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 40%;
-  width: 1px;
-  background-color: #333;
-  opacity: 0.5;
-}
-
 /* 텍스트 정보 */
 .projectInfo {
   width: 60%;

@@ -28,7 +28,7 @@ function MainPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <img
-              src="/images/memoji-1.png"
+              src="/images/profile/memoji-1.png"
               alt="Memoji Left"
               className={`${styles.hoverImage} ${styles.leftImage}`}
               onClick={() => navigate("/about")}
@@ -45,7 +45,7 @@ function MainPage() {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <img
-              src="/images/memoji-2.png"
+              src="/images/profile/memoji-2.png"
               alt="Memoji Right"
               className={`${styles.hoverImage} ${styles.rightImage}`}
               onClick={() => navigate("/projects")}

@@ -30,10 +30,14 @@ const projectData = [
     link: "",
   },
   {
-    id: 4,
-    title: "",
-    description: "",
-    image: "/images/project4.png",
+    id: 8,
+    title: "SHORT VIDEO",
+    description: [
+      "트렌디한 숏폼 포맷에 맞춰 기획부터 촬영 및 편집까지 직접 제작한 콘텐츠입니다.",
+      "네이버 클립과 인스타그램 릴스 중심으로 짧은 시간 안에 메시지를 효과적으로 전달하는 구성에 집중했습니다.",
+      "콘텐츠의 흐름, 속도감, 화면 전환 타이밍 등 숏폼 특유의 리듬을 고려해 작업했습니다.",
+    ],
+    image: "/images/shortform1.png",
     technologies: ["", ""],
     link: "",
   },
