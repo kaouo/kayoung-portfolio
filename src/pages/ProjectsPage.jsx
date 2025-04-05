@@ -41,13 +41,13 @@ const projectData = [
     id: 6,
     title: "CARD NEWS",
     category: "ETC",
-    image: "/images/main.png",
+    image: "/images/cardnews/main.png",
   },
   {
     id: 7,
     title: "SHORT VIDEO",
     category: "ETC",
-    image: "/images/main.png",
+    image: "/images/shortform/main.png",
   },
 ];
 
