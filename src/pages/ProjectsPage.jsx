@@ -27,31 +27,37 @@ const projectData = [
   },
   {
     id: 4,
-    title: "KYOBO",
+    title: "KYOBO VORA FRIENDS",
     category: "ACTIVITIES",
     image: "/images/kyobo/main.png",
   },
   {
     id: 5,
-    title: "TOOLDI",
+    title: "TOOLDI SUPPORTERS",
     category: "ACTIVITIES",
     image: "/images/tooldi/main.png",
   },
   {
     id: 6,
     title: "CARD NEWS",
-    category: "ETC",
+    category: "ARCHIVING",
     image: "/images/cardnews/main.png",
   },
   {
     id: 7,
     title: "SHORT VIDEO",
-    category: "ETC",
+    category: "ARCHIVING",
+    image: "/images/shortform/main.png",
+  },
+  {
+    id: 8,
+    title: "GALLERY",
+    category: "ARCHIVING",
     image: "/images/shortform/main.png",
   },
 ];
 
-const categories = ["WEB", "ANIMATION", "ACTIVITIES", "ETC"];
+const categories = ["WEB", "ANIMATION", "ACTIVITIES", "ARCHIVING"];
 
 function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("WEB");
