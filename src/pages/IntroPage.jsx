@@ -18,7 +18,7 @@ function IntroPage() {
   return (
     <div className={`${styles.intro} ${fade ? styles.fadeOut : ""}`}>
       <div className={styles.typingWrapper}>
-        <h1 className={styles.typing}>"HELLO, KAYOUNG WORLD!"</h1>
+        <h1 className={styles.typing}>"HELLO, KAYOUNG WORLD!\n"</h1>
       </div>
     </div>
   );
